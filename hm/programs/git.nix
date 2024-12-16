@@ -1,13 +1,13 @@
-{ config, ... }:
+{ userConfig, ... }:
 
 let
-  cfg = config.hydenix;
+  cfg = userConfig;
 in
 {
 programs.git = {
     enable = true;
-    userName = cfg.git.userName;
-    userEmail = cfg.git.userEmail;
+    userName = cfg.gitUser;
+    userEmail = cfg.gitEmail;
     lfs.enable = true;
     extraConfig = {
     push = { autoSetupRemote = true; };

@@ -80,7 +80,7 @@
 
   services.xserver.videoDrivers = [ "nvidia" ];
 
-  hardware.nvidia = {
+  hardware.nvidia = lib.mkDefault {
     prime = {
       sync.enable = true;
       # offload = {
@@ -93,7 +93,7 @@
 
     modesetting.enable = true;
 
-    powerManagement = { enable = true; };
+    powerManagement.enable = true;
 
     open = false;
     nvidiaSettings = false; # gui app
@@ -102,15 +102,17 @@
 
   specialisation = {
     on-the-go.configuration = {
+
       system.nixos.tags = [ "on-the-go" ];
-      hardware.nvidia = {
-        prime.offload.enable = lib.mkForce true;
-        prime.offload.enableOffloadCmd = lib.mkForce true;
-        prime.sync.enable = lib.mkForce false;
+
+      hardware.nvidia = lib.mkForce {
+        prime.offload.enable = true;
+        prime.offload.enableOffloadCmd =  true;
+        prime.sync.enable =  false;
 
         powerManagement = {
-          enable = lib.mkForce true;
-          finegrained = lib.mkForce true;
+          enable = true;
+          finegrained = true;
         };
 
       };

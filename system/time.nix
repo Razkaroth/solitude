@@ -1,16 +1,16 @@
-{config, ... }:{
+{ userConfig, ... }:{
   
     
     i18n.extraLocaleSettings = {
-    LC_ADDRESS = config.extraLocale;
-    LC_IDENTIFICATION = config.extraLocale;
-    LC_MEASUREMENT = config.extraLocale;
-    LC_MONETARY = config.extraLocale;
-    LC_NAME = config.extraLocale;
-    LC_NUMERIC = config.extraLocale;
-    LC_PAPER = config.extraLocale;
-    LC_TELEPHONE = config.extraLocale;
-    LC_TIME = config.extraLocale;
+    LC_ADDRESS = userConfig.extraLocale;
+    LC_IDENTIFICATION = userConfig.extraLocale;
+    LC_MEASUREMENT = userConfig.extraLocale;
+    LC_MONETARY = userConfig.extraLocale;
+    LC_NAME = userConfig.extraLocale;
+    LC_NUMERIC = userConfig.extraLocale;
+    LC_PAPER = userConfig.extraLocale;
+    LC_TELEPHONE = userConfig.extraLocale;
+    LC_TIME = userConfig.extraLocale;
   };
     
 }

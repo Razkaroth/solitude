@@ -10,6 +10,7 @@
   defaultPassword = "hydenix";
   timezone = "America/Mexico_City";
   locale = "en_US.UTF-8";
+  extraLocale = "es_MX.UTF-8";
 
   # hardware config - sudo nixos-generate-config --show-hardware-config > hardware-configuration.nix
   hardwareConfig = (toString ./hardware-configuration.nix);
@@ -39,17 +40,15 @@
       }
   */
   # List of nix modules to import in ./hosts/nixos/default.nix
+
   nixModules = [
-   import ./system
+    (toString ./system/default.nix)
     # (toString ./my-module.nix)
     # in my-module.nix you can reference this userConfig
-    # ({ userConfig, pkgs, ... }: {
-    #   environment.systemPackages = [ pkgs.git ];
-    # })
   ];
   # List of nix modules to import in ./lib/mkConfig.nix
   homeModules = [
-    import ./hm
+     (toString ./hm/default.nix)
     # (toString ./my-module.nix)
   ];
 
