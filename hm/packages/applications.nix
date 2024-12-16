@@ -1,10 +1,12 @@
-{ pkgs, zen-browser, ... }:
-
+{ pkgs,inputs, ... }:
+let
+  system = "x86_64-linux";
+in
 {
   home.packages = with pkgs; [
     # --------------------------------------------------- // Applications
     firefox # browser
-    zen-browser.packages."${system}".default
+    inputs.zen-browser.packages."${system}".default
     brave # browser
     chromium # browser
     google-chrome # browser

@@ -1,4 +1,4 @@
-{ nixarr, nixpkgs,...}:{
+{ inputs, nixpkgs,...}:{
 
   imports = [
     ./docker.nix
@@ -6,7 +6,8 @@
     ./kanata
     ./packages.nix
     ./time.nix
-    # ./nixarr.nix
+    inputs.nixarr.nixosModules.default
+    ./nixarr.nix
   ];
 
 }

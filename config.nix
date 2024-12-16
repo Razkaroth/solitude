@@ -42,6 +42,7 @@
   # List of nix modules to import in ./hosts/nixos/default.nix
 
   nixModules = [
+    
     (toString ./system/default.nix)
     # (toString ./my-module.nix)
     # in my-module.nix you can reference this userConfig
@@ -50,6 +51,11 @@
   homeModules = [
      (toString ./hm/default.nix)
     # (toString ./my-module.nix)
+    
+    
+   
+
+
   ];
 
   hyde = rec {
