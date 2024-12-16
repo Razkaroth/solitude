@@ -4,5 +4,8 @@
     git
     zsh
     jmtpfs
+    yazi
+    zip
+    unzip
   ];
 }
