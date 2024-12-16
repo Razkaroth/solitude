@@ -1,6 +1,7 @@
-{ inputs, nixpkgs,...}:{
+{ inputs, ...}:{
 
   imports = [
+    # ./boot.nix
     ./docker.nix
     ./tailscale.nix
     ./kanata
