@@ -49,6 +49,7 @@
     initExtraFirst = ''
 
       if [ -z "$TMUX" ]; then
+          echo "Starting tmux..."
           tmux new-session -A -s scratch
       fi
 

@@ -2,4 +2,4 @@
 
 echo "rebuilding system"
 
-sudo nixos-rebuild switch -p solitude --flake ./#hydenix
+sudo nixos-rebuild switch -p solitude --flake ./#solitude
