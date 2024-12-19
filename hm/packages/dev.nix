@@ -28,6 +28,7 @@
     git-lfs
     lazygit
     github-cli
+    jetbrains-toolbox
     postman
     insomnia
     speedtest-cli

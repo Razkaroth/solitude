@@ -4,6 +4,6 @@
     ./dev.nix
     ./media.nix
     ./gaming.nix
-
+    ./wayland.nix
   ];
 }

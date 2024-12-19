@@ -92,6 +92,8 @@ play_online_music() {
   mpv --shuffle --vid=no "$link"
 }
 
+nohup easyeffects --gapplication-service &
+
 # Check if an online music process is running and send a notification, otherwise run the main function
 pkill mpv && notify-send -u low -i "$iDIR/music.png" "Music stopped" || {
 

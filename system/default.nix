@@ -9,6 +9,7 @@
     ./time.nix
     inputs.nixarr.nixosModules.default
     ./nixarr.nix
+    ./udev.nix
   ];
 
 }
