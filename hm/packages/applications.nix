@@ -6,6 +6,7 @@ in
   home.packages = with pkgs; [
     # --------------------------------------------------- // Applications
     firefox # browser
+    bottles # wine manager
     inputs.zen-browser.packages."${system}".default
     brave # browser
     chromium # browser

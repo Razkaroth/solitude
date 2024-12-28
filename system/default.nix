@@ -12,4 +12,5 @@
     ./udev.nix
   ];
 
+  home-manager.backupFileExtension = "bak";
 }
