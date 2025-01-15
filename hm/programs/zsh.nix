@@ -24,6 +24,9 @@
       alias vc='code' # gui code editor
       alias n='nvim'
       alias lz='lazygit'
+      alias dcu='docker compose up'
+      alias dcd='docker compose down'
+      alias dcr='docker compose restart'
 
       # Directory navigation shortcuts
       alias ..='cd ..'
@@ -45,13 +48,13 @@
       eval $(thefuck --alias)
 
 
-    '';
-    initExtraFirst = ''
-
       if [ -z "$TMUX" ]; then
           echo "Starting tmux..."
           tmux new-session -A -s scratch
       fi
+    '';
+    initExtraFirst = ''
+
 
       #Display Pokemonks
       pokemon-colorscripts --no-title -r 1-3

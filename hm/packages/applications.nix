@@ -21,6 +21,7 @@ in
     typora
     transmission_4-gtk
     libreoffice
+    libsForQt5.networkmanager-qt
     signal-desktop # messaging client
     zoom-us # video conferencing
   ];
