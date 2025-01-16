@@ -23,6 +23,7 @@
       alias lt='eza --icons=auto --tree' # list folder as tree
       alias vc='code' # gui code editor
       alias n='nvim'
+      alias ta='tmux attach'
       alias lz='lazygit'
       alias dcu='docker compose up'
       alias dcd='docker compose down'
