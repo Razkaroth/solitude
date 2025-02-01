@@ -25,6 +25,8 @@ declare -A online_music=(
   ["YT - Zelda Chillhop 🏰⚔️🎶"]="https://www.youtube.com/playlist?list=PLQsgB3CetZVZh1QEvnfdc59XNDx19YHlL"
   ["YT - Undertale Lofi 🏰⚔️🎶"]="https://www.youtube.com/playlist?list=PLb5uvAYH2QqAv4rbY7E5GaIdidZ_dNggt"
   ["YT - Nier 🏰⚔️🎶"]="https://www.youtube.com/playlist?list=PLIzhSrfqD8bgCsPuQeu_-V681TnuRLaar"
+  ["YT - I dont remember Anymore 🔖⚔️🎶"]="https://www.youtube.com/watch?v=X6SN9eM--O4"
+  ["YT - State of soul 🔖⚔️🎶"]="https://www.youtube.com/watch?v=_XrM4Y1wR88"
 
 )
 

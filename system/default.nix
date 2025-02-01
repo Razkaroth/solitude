@@ -10,6 +10,7 @@
     inputs.nixarr.nixosModules.default
     ./nixarr.nix
     ./udev.nix
+    ./AI.nix
   ];
 
   home-manager.backupFileExtension = "bak";
