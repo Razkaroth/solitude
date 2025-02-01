@@ -11,6 +11,7 @@
     ./nixarr.nix
     ./udev.nix
     ./AI.nix
+    ./sound.nix
   ];
 
   home-manager.backupFileExtension = "bak";
