@@ -40,6 +40,7 @@
     sqlite
     sqlitebrowser
     mongodb-compass
+    mongodb-tools
 
 
     # langs

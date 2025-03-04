@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  services.steam = {
+  programs.steam = {
     enable = true;
     package = pkgs.steam.override {
       extraLibraries = pkgs: [ pkgs.pkgsi686Linux.pipewire.jack ];

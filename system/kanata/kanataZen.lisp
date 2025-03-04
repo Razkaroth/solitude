@@ -43,7 +43,7 @@
      tab   q     w     e     r     t     y     u     i     o     p     [     ]     \     del
 
 ;;   caps  a     s     d     f     g     h     j     k     l     ;     '     ret         pgup
-     esc   @a    @s    @d    @f    g     h     @j    @k    @l    @;    '     ret         home
+     esc   a     s     d     f     g     h     j     k     l     ;     '     ret         home
 
 ;;   lsft  z     x     c     v     b     n     m     ,     .     /     rsft        ▲     pgdn
      lsft  z     x     c     v     b     n     m     ,     .     /     rsft        ▲     end

@@ -24,6 +24,7 @@
       alias vc='code' # gui code editor
       alias n='nvim'
       alias ta='tmux attach'
+      alias t='tmux new-session -A -s scratch'
       alias lz='lazygit'
       alias dcu='docker compose up'
       alias dcd='docker compose down'
@@ -48,11 +49,6 @@
       eval "$(zoxide init zsh)"
       eval $(thefuck --alias)
 
-
-      if [ -z "$TMUX" ]; then
-          echo "Starting tmux..."
-          tmux new-session -A -s scratch
-      fi
     '';
     initExtraFirst = ''
 

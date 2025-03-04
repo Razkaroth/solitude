@@ -12,6 +12,7 @@
     ./udev.nix
     ./AI.nix
     ./sound.nix
+    ./steam.nix
   ];
 
   home-manager.backupFileExtension = "bak";
